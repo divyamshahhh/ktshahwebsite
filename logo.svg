@@ -1,0 +1,18 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K T Shah Investments">
+  <defs>
+    <linearGradient id="ktGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0c074"/>
+      <stop offset="1" stop-color="#c9a449"/>
+    </linearGradient>
+  </defs>
+  <!-- navy disc -->
+  <circle cx="60" cy="60" r="58" fill="#0b1f3a"/>
+  <!-- gold ring -->
+  <circle cx="60" cy="60" r="54" fill="none" stroke="url(#ktGold)" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="48.5" fill="none" stroke="rgba(201,164,73,0.35)" stroke-width="1"/>
+  <!-- KT monogram -->
+  <text x="60" y="63" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="url(#ktGold)" letter-spacing="1">KT</text>
+  <!-- ascending growth line (Invest · Grow · Prosper) -->
+  <polyline points="38,86 50,80 62,83 74,72 84,76" fill="none" stroke="url(#ktGold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="78,71 84,76 84,70" fill="none" stroke="url(#ktGold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

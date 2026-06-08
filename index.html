@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K T Shah Investments — Invest. Grow. Prosper.</title>
+<meta name="description" content="K T Shah Investments — AMFI-registered mutual fund distributor. Goal-based investing, SIPs, and honest, jargon-free guidance. Invest. Grow. Prosper.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:title" content="K T Shah Investments — Invest. Grow. Prosper.">
+<meta property="og:description" content="AMFI-registered mutual fund distributor. Goal-based investing, SIPs, and honest guidance.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="kts-logo.png">
+
+<!-- Fonts: Cormorant Garamond (display serif) + DM Sans (body/UI) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#0b1f3a;
+    --navy-2:#102a4c;
+    --navy-3:#16365f;
+    --navy-deep:#081729;
+    --gold:#c9a449;
+    --gold-2:#e0c074;
+    --gold-soft:#f3e6c4;
+    --cream:#fbf8f0;
+    --ink:#1a2536;
+    --muted:#5b6878;
+    --line:#e7e2d6;
+    --white:#ffffff;
+    --shadow:0 18px 50px rgba(11,31,58,.12);
+    --shadow-sm:0 6px 22px rgba(11,31,58,.08);
+    --radius:18px;
+    --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --sans:'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;
+    letter-spacing:.1px;
+  }
+  h1,h2,h3,h4{font-family:var(--serif);color:var(--navy);line-height:1.08;font-weight:600}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1200px;margin:0 auto;padding:0 28px}
+  .gold{color:var(--gold)}
+  .center{text-align:center}
+
+  /* ---------- KICKER LABEL ---------- */
+  .kicker{display:inline-flex;align-items:center;gap:14px;color:var(--gold);font-family:var(--sans);
+    font-size:12.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;margin-bottom:18px}
+  .kicker::before{content:"";width:34px;height:1.5px;background:var(--gold);display:inline-block;opacity:.8}
+  .kicker.center-k{justify-content:center}
+  .kicker.center-k::after{content:"";width:34px;height:1.5px;background:var(--gold);display:inline-block;opacity:.8}
+
+  /* ---------- NAV ---------- */
+  header{position:sticky;top:0;z-index:100;background:rgba(8,23,41,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(201,164,73,.18)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:82px}
+  .brand{display:flex;align-items:center;gap:13px}
+  .logo{width:48px;height:48px;display:block;border-radius:50%}
+  .logo-text{display:flex;width:46px;height:46px;border:1.5px solid var(--gold);border-radius:50%;align-items:center;
+    justify-content:center;font-family:var(--serif);font-weight:700;color:var(--gold);font-size:19px;letter-spacing:.5px}
+  .brand-text{color:var(--white);font-family:var(--serif)}
+  .brand-text b{display:block;font-size:20px;letter-spacing:.4px;font-weight:600;line-height:1.1}
+  .brand-text span{display:block;font-family:var(--sans);font-size:9.5px;letter-spacing:3px;color:var(--gold-2);
+    text-transform:uppercase;margin-top:2px}
+  nav ul{display:flex;gap:34px;list-style:none;align-items:center}
+  nav a{color:#cfd8e6;font-size:14px;letter-spacing:.4px;transition:color .2s;font-weight:500}
+  nav a:hover{color:var(--gold-2)}
+  .btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--navy);
+    font-family:var(--sans);font-weight:700;padding:13px 28px;border-radius:4px;font-size:13.5px;letter-spacing:.6px;
+    text-transform:uppercase;border:none;cursor:pointer;transition:transform .15s,box-shadow .2s;
+    box-shadow:0 8px 22px rgba(201,164,73,.30)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,164,73,.42)}
+  .btn-ghost{background:transparent;color:var(--gold-2);border:1.5px solid rgba(201,164,73,.6);box-shadow:none}
+  .btn-ghost:hover{background:rgba(201,164,73,.10)}
+  .menu-toggle{display:none;background:none;border:none;color:var(--gold-2);font-size:28px;cursor:pointer}
+
+  /* ---------- HERO ---------- */
+  .hero{background:radial-gradient(1300px 700px at 80% -15%,var(--navy-3),var(--navy) 58%,var(--navy-deep));
+    color:#fff;padding:96px 0 108px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-140px;bottom:-160px;width:480px;height:480px;
+    border:1px solid rgba(201,164,73,.14);border-radius:50%}
+  .hero::before{content:"";position:absolute;left:-90px;top:30%;width:300px;height:300px;
+    border:1px solid rgba(201,164,73,.08);border-radius:50%}
+  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;position:relative;z-index:2}
+  .eyebrow{display:inline-block;color:var(--gold-2);font-size:12px;letter-spacing:3.5px;text-transform:uppercase;
+    border:1px solid rgba(201,164,73,.4);padding:7px 18px;border-radius:50px;margin-bottom:26px;font-weight:500}
+  .hero h1{color:#fff;font-size:64px;margin-bottom:22px;letter-spacing:-1px;font-weight:600}
+  .hero h1 em{color:var(--gold-2);font-style:italic}
+  .hero p.lead{font-size:18px;color:#bccadd;max-width:530px;margin-bottom:36px;line-height:1.75}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .trust-row{display:flex;gap:36px;margin-top:48px;flex-wrap:wrap}
+  .trust-row div{border-left:2px solid var(--gold);padding-left:16px}
+  .trust-row b{font-family:var(--serif);font-size:34px;color:var(--gold-2);display:block;line-height:1;font-weight:600}
+  .trust-row span{font-size:12.5px;color:#9fb0c7;letter-spacing:.3px}
+  /* hero right composition */
+  .hero-right{position:relative}
+  .founders-hero{display:grid;grid-template-columns:1fr 1fr;gap:8px;border-radius:18px;overflow:hidden;
+    border:1px solid rgba(201,164,73,.35);box-shadow:var(--shadow)}
+  .founders-hero figure{position:relative;margin:0;overflow:hidden;background:var(--navy-2)}
+  .founders-hero img{width:100%;height:340px;object-fit:cover;object-position:center top;display:block}
+  .founders-hero figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 13px;
+    background:linear-gradient(to top,rgba(8,23,41,.94),rgba(8,23,41,.4) 55%,transparent);
+    color:#fff;font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.2}
+  .founders-hero figcaption small{display:block;font-family:var(--sans);font-size:9.5px;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--gold-2);font-weight:500;margin-top:3px}
+  /* SIP card overlaps photo */
+  .hero-card{background:rgba(255,255,255,.97);border-radius:16px;padding:24px;box-shadow:0 24px 60px rgba(0,0,0,.35);
+    margin-top:-44px;margin-left:34px;margin-right:-6px;position:relative;z-index:3;border:1px solid rgba(201,164,73,.25)}
+  .hero-card h3{color:var(--navy);font-size:20px;margin-bottom:3px;font-weight:600}
+  .hero-card .sub{color:var(--muted);font-size:12.5px;margin-bottom:16px;font-family:var(--sans)}
+  .mini-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .mini-field{margin-bottom:6px}
+  .mini-field label{display:block;font-size:11.5px;color:var(--muted);margin-bottom:6px;font-weight:500;letter-spacing:.2px}
+  .mini-field input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#fdfcf8;
+    color:var(--ink);font-size:15px;font-family:var(--sans)}
+  .mini-field input:focus{outline:none;border-color:var(--gold)}
+  .mini-result{background:var(--navy);border-radius:10px;padding:14px;text-align:center;margin-top:12px}
+  .mini-result span{font-size:11px;color:#9fb0c7;display:block;letter-spacing:.4px}
+  .mini-result b{font-family:var(--serif);font-size:30px;color:var(--gold-2);font-weight:600}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:46px 0}
+  .sec-head{max-width:700px;margin:0 auto 30px;text-align:center}
+  .sec-head h2{font-size:46px;margin-bottom:18px;letter-spacing:-.5px;font-weight:600}
+  .sec-head h2 em{font-style:italic;color:var(--gold)}
+  .sec-head p{color:var(--muted);font-size:17px;line-height:1.7}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+  .about-grid h2{font-size:42px;margin-bottom:22px;letter-spacing:-.5px}
+  .about-grid h2 em{font-style:italic;color:var(--gold)}
+  .about-grid p{color:var(--muted);margin-bottom:18px;font-size:16px}
+  .check-list{list-style:none;margin-top:14px}
+  .check-list li{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
+  .check-list .tick{flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--gold-soft);
+    color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;margin-top:3px}
+  .check-list b{color:var(--ink)}
+  .founder-card{background:var(--navy);color:#fff;border-radius:var(--radius);padding:44px;box-shadow:var(--shadow);
+    position:relative;overflow:hidden}
+  .founder-card::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;
+    border:1px solid rgba(201,164,73,.18);border-radius:50%}
+  .founder-avatar{width:92px;height:92px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-2));
+    display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:34px;color:var(--navy);
+    font-weight:700;margin-bottom:22px}
+  .founder-card h3{color:#fff;font-size:28px;font-weight:600}
+  .founder-card .role{color:var(--gold-2);font-family:var(--sans);font-size:12px;letter-spacing:2px;margin:6px 0 18px;
+    text-transform:uppercase;font-weight:500}
+  .founder-card p{color:#c8d2e0;font-size:16.5px;font-family:var(--serif);font-style:italic;line-height:1.6}
+  .founder-card .arn{margin-top:22px;font-family:var(--sans);font-size:13px;color:#9fb0c7;
+    border-top:1px solid rgba(255,255,255,.12);padding-top:18px;letter-spacing:.3px}
+
+  /* ---------- ABOUT INTRO (editorial 3-up with stat) ---------- */
+  .about-intro{display:grid;grid-template-columns:1fr 1fr auto;gap:40px;align-items:center;margin-bottom:38px}
+  .about-intro .ai-head{margin:0}
+  .about-intro .ai-head h2{font-size:38px;letter-spacing:-.5px;margin-top:8px;line-height:1.06}
+  .about-intro .ai-head h2 em{font-style:italic;color:var(--gold)}
+  .ai-body{position:relative;padding-top:22px}
+  .ai-body::before{content:"";position:absolute;top:0;left:0;width:42px;height:2px;background:var(--gold)}
+  .ai-body p{color:var(--muted);font-size:14px;line-height:1.7}
+  .ai-stat{align-self:center;border-left:1px solid var(--line);padding-left:46px;white-space:nowrap}
+  .ai-stat .big{font-family:var(--serif);font-size:78px;font-weight:600;color:var(--navy);line-height:.85}
+  .ai-stat .big sup{color:var(--gold);font-size:30px;font-weight:600;vertical-align:super;margin-left:2px}
+  .ai-stat .lbl{font-family:var(--sans);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--muted);font-weight:600;line-height:1.6;margin-top:10px}
+
+  /* ---------- FOUNDERS (about) — editorial portrait cards ---------- */
+  #about{padding-top:48px;padding-bottom:52px}
+  .founders{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:8px}
+  .founder{position:relative;height:440px;border-radius:18px;overflow:hidden;background:var(--navy-2);
+    box-shadow:var(--shadow);transition:transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .55s}
+  .founder:hover{transform:translateY(-8px);box-shadow:0 36px 72px rgba(8,23,41,.45)}
+  .founder>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 16%;
+    transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .6s}
+  .founder:hover>img{transform:scale(1.07)}
+  /* hairline gold frame fades in on hover (old-money detail) */
+  .founder::after{content:"";position:absolute;inset:16px;border:1px solid rgba(201,164,73,.55);border-radius:12px;
+    pointer-events:none;opacity:0;transform:scale(1.015);transition:opacity .6s,transform .6s}
+  .founder:hover::after{opacity:1;transform:scale(1)}
+  .founder .overlay{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:28px 30px 30px;
+    background:linear-gradient(to top,rgba(6,17,31,.96) 8%,rgba(6,17,31,.74) 30%,rgba(6,17,31,.08) 60%,transparent);
+    transition:background .6s}
+  .founder:hover .overlay{background:linear-gradient(to top,rgba(6,17,31,.98) 16%,rgba(6,17,31,.9) 52%,rgba(6,17,31,.46) 82%,rgba(6,17,31,.16))}
+  .founder .fkick{display:inline-flex;align-items:center;gap:10px;color:var(--gold-2);font-family:var(--sans);
+    font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:11px}
+  .founder .fkick::before{content:"";width:26px;height:1.5px;background:var(--gold)}
+  .founder h3{color:#fff;font-size:32px;font-weight:600;line-height:1;margin-bottom:6px}
+  .founder .frole{color:#cdd8e6;font-family:var(--sans);font-size:12.5px;letter-spacing:.3px;font-weight:500}
+  .founder .frole b{color:var(--gold-2);font-weight:600}
+  .founder .fbio{max-height:0;opacity:0;overflow:hidden;
+    transition:max-height .7s cubic-bezier(.2,.7,.2,1),opacity .5s,margin-top .5s}
+  .founder:hover .fbio{max-height:360px;opacity:1;margin-top:18px}
+  .founder .creds{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+  .founder .creds span{border:1px solid rgba(201,164,73,.5);background:rgba(201,164,73,.10);color:var(--gold-2);
+    font-family:var(--sans);font-size:11px;font-weight:600;padding:5px 11px;border-radius:50px;letter-spacing:.3px}
+  .founder .fbio p{color:#c2cedd;font-size:14.5px;line-height:1.65}
+  .founder .fplus{position:absolute;top:22px;right:22px;z-index:3;width:44px;height:44px;border-radius:50%;
+    border:1px solid rgba(201,164,73,.5);color:var(--gold-2);display:flex;align-items:center;justify-content:center;
+    font-size:24px;line-height:1;background:rgba(6,17,31,.35);backdrop-filter:blur(4px);
+    transition:transform .55s cubic-bezier(.2,.7,.2,1),background .45s,color .45s,border-color .45s}
+  .founder:hover .fplus{transform:rotate(135deg);background:var(--gold);color:var(--navy);border-color:var(--gold)}
+
+  /* ---------- SERVICES ---------- */
+  #services{background:linear-gradient(180deg,#fff,var(--cream))}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:40px 32px 36px;box-shadow:var(--shadow-sm);overflow:hidden;
+    transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s,border-color .45s}
+  /* gold top-bar wipe */
+  .card::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-2));transform:scaleX(0);transform-origin:left;
+    transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+  .card:hover::before{transform:scaleX(1)}
+  /* soft gold glow that fades in */
+  .card::after{content:"";position:absolute;inset:0;border-radius:var(--radius);pointer-events:none;
+    box-shadow:0 0 0 1px rgba(201,164,73,.25) inset;opacity:0;transition:opacity .45s}
+  .card:hover::after{opacity:1}
+  .card:hover{transform:translateY(-10px);border-color:rgba(201,164,73,.55);
+    box-shadow:0 30px 60px rgba(11,31,58,.16), 0 16px 44px rgba(201,164,73,.24)}
+  .card .bgnum{position:absolute;top:6px;right:18px;font-family:var(--serif);font-size:78px;font-weight:600;
+    color:rgba(11,31,58,.05);line-height:1;pointer-events:none;transition:color .45s,transform .45s}
+  .card:hover .bgnum{color:rgba(201,164,73,.16);transform:translateY(-2px)}
+  .card .ic{width:66px;height:66px;border-radius:16px;background:var(--navy);display:flex;align-items:center;
+    justify-content:center;margin-bottom:24px;position:relative;z-index:2;
+    transition:background .45s,box-shadow .45s,transform .45s}
+  .card .ic svg{width:33px;height:33px;stroke:var(--gold-2);fill:none;stroke-width:1.5;
+    stroke-linecap:round;stroke-linejoin:round;transition:stroke .45s}
+  .card:hover .ic{background:linear-gradient(135deg,var(--gold),var(--gold-2));transform:translateY(-3px) rotate(-3deg);
+    box-shadow:0 14px 30px rgba(201,164,73,.5)}
+  .card:hover .ic svg{stroke:var(--navy)}
+  .card h3{font-size:23px;margin-bottom:11px;font-weight:600;position:relative;z-index:2}
+  .card p{color:var(--muted);font-size:15px;position:relative;z-index:2}
+
+  /* ---------- WHY / STATS STRIP ---------- */
+  #why{background:var(--navy);color:#fff}
+  #why .sec-head h2{color:#fff}
+  #why .sec-head p{color:#aab8cc}
+  #why .kicker{color:var(--gold-2)}
+  #why .kicker::before,#why .kicker::after{background:var(--gold-2)}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .why-item{position:relative;display:grid;grid-template-columns:auto 1fr;column-gap:18px;align-items:center;
+    text-align:left;padding:22px 26px;border:1px solid rgba(201,164,73,.18);border-radius:16px;
+    background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.012));overflow:hidden;
+    transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s,box-shadow .45s}
+  .why-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;
+    background:linear-gradient(180deg,var(--gold),var(--gold-2));
+    transition:width .5s cubic-bezier(.2,.7,.2,1)}
+  .why-item:hover::before{width:4px}
+  .why-item:hover{transform:translateY(-6px);border-color:rgba(201,164,73,.5);
+    box-shadow:0 22px 46px rgba(0,0,0,.32),0 12px 34px rgba(201,164,73,.16)}
+  .why-item .wic{grid-row:1 / span 3;align-self:center;width:54px;height:54px;border-radius:15px;
+    border:1px solid rgba(201,164,73,.4);background:rgba(201,164,73,.08);display:flex;align-items:center;
+    justify-content:center;transition:background .45s,box-shadow .45s,transform .45s}
+  .why-item .wic svg{width:26px;height:26px;stroke:var(--gold-2);fill:none;stroke-width:1.5;
+    stroke-linecap:round;stroke-linejoin:round;transition:stroke .45s}
+  .why-item:hover .wic{background:linear-gradient(135deg,var(--gold),var(--gold-2));transform:scale(1.05);
+    box-shadow:0 12px 26px rgba(201,164,73,.45)}
+  .why-item:hover .wic svg{stroke:var(--navy)}
+  .why-item .num{grid-column:2;font-family:var(--serif);font-size:30px;color:var(--gold-2);font-weight:600;line-height:1}
+  .why-item .wlabel{grid-column:2;color:#fff;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.2px;margin-top:3px}
+  .why-item p{grid-column:2;color:#93a4ba;font-size:12.5px;margin-top:3px;line-height:1.45}
+
+  /* typewriter headline */
+  .risk{position:relative;color:#c2cedd;font-style:italic;white-space:nowrap}
+  .risk::after{content:"";position:absolute;left:-2px;top:54%;width:0;height:3px;background:#e34b3f;
+    border-radius:2px;box-shadow:0 0 7px rgba(227,75,63,.6);transition:width .55s cubic-bezier(.2,.7,.2,1)}
+  .risk.struck::after{width:calc(100% + 4px)}
+  .grow{color:var(--gold-2);font-style:italic;white-space:nowrap}
+  .caret{display:inline-block;width:3px;height:.86em;background:var(--gold-2);margin-left:5px;
+    border-radius:2px;vertical-align:-1px;animation:caretBlink 1s steps(1) infinite}
+  @keyframes caretBlink{50%{opacity:0}}
+
+  /* ---------- PROCESS (numbered, piyush-style) ---------- */
+  #process{background:linear-gradient(180deg,var(--cream),#fff)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .step{position:relative;padding:36px 26px;border-top:2px solid var(--line);transition:border-color .25s}
+  .step:hover{border-color:var(--gold)}
+  .step .n{font-family:var(--serif);font-size:58px;font-weight:600;color:transparent;-webkit-text-stroke:1.3px var(--gold);
+    line-height:1;margin-bottom:16px;display:block}
+  .step h3{font-size:23px;margin-bottom:10px;font-weight:600}
+  .step p{color:var(--muted);font-size:14.5px}
+
+  /* ---------- CALCULATORS ---------- */
+  .calc-tabs{display:flex;gap:10px;justify-content:center;margin-bottom:38px;flex-wrap:wrap}
+  .calc-tab{padding:12px 28px;border-radius:4px;border:1.5px solid var(--line);background:#fff;cursor:pointer;
+    font-size:13.5px;font-weight:600;color:var(--muted);transition:all .2s;letter-spacing:.4px;
+    text-transform:uppercase;font-family:var(--sans)}
+  .calc-tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .calc-panel{display:none}
+  .calc-panel.active{display:block}
+  .calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border:1px solid var(--line);
+    border-radius:20px;overflow:hidden;box-shadow:var(--shadow);max-width:960px;margin:0 auto}
+  .calc-inputs{padding:44px}
+  .calc-output{background:radial-gradient(600px 400px at 100% 0%,var(--navy-3),var(--navy));color:#fff;padding:44px;
+    display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+  .calc-output::after{content:"";position:absolute;right:-80px;bottom:-80px;width:220px;height:220px;
+    border:1px solid rgba(201,164,73,.2);border-radius:50%}
+  .field{margin-bottom:28px}
+  .field label{display:flex;justify-content:space-between;font-size:14px;color:var(--ink);font-weight:600;
+    margin-bottom:12px;font-family:var(--sans)}
+  .field label .val{color:var(--navy);background:var(--gold-soft);padding:3px 14px;border-radius:50px;
+    font-family:var(--serif);font-weight:600;font-size:16px}
+  input[type=range]{width:100%;height:6px;border-radius:5px;background:var(--line);appearance:none;-webkit-appearance:none;outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;
+    background:var(--gold);border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.2);cursor:pointer}
+  input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--gold);border:3px solid #fff;cursor:pointer}
+  .calc-output .res-label{font-size:12px;color:#9fb0c7;letter-spacing:2px;text-transform:uppercase}
+  .calc-output .res-big{font-family:var(--serif);font-size:54px;color:var(--gold-2);margin:6px 0 26px;
+    line-height:1.05;font-weight:600}
+  .res-line{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid rgba(255,255,255,.12);
+    font-size:15px;color:#c8d2e0}
+  .res-line b{color:#fff;font-family:var(--serif);font-size:18px;font-weight:600}
+  .calc-note{font-size:12px;color:#8b9bb3;margin-top:20px;position:relative;z-index:2}
+
+  /* ---------- INSIGHTS ---------- */
+  #insights{background:linear-gradient(180deg,var(--cream),#fff)}
+  .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .post{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+  .post:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .post .thumb{height:160px;background:radial-gradient(400px 200px at 70% 0%,var(--navy-3),var(--navy));
+    display:flex;align-items:center;justify-content:center}
+  .post .thumb svg{width:50px;height:50px;stroke:var(--gold-2);fill:none;stroke-width:1.4}
+  .post .body{padding:28px}
+  .post .cat{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;font-family:var(--sans)}
+  .post h3{font-size:22px;margin:10px 0 12px;line-height:1.2;font-weight:600}
+  .post p{color:var(--muted);font-size:14.5px;margin-bottom:16px}
+  .post .read{color:var(--navy);font-weight:700;font-size:13px;letter-spacing:.5px;text-transform:uppercase;font-family:var(--sans)}
+  .post .read:hover{color:var(--gold)}
+
+  /* ---------- TESTIMONIALS ---------- */
+  #voices{background:var(--navy-deep);color:#fff}
+  #voices .sec-head h2{color:#fff}
+  #voices .sec-head p{color:#aab8cc}
+  #voices .kicker{color:var(--gold-2)}
+  #voices .kicker::before,#voices .kicker::after{background:var(--gold-2)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .quote{background:rgba(255,255,255,.04);border:1px solid rgba(201,164,73,.20);border-radius:var(--radius);padding:36px;position:relative}
+  .quote .mark{font-family:var(--serif);font-size:70px;color:rgba(201,164,73,.25);line-height:.6;height:34px}
+  .quote .stars{color:var(--gold-2);letter-spacing:3px;margin-bottom:16px;font-size:14px}
+  .quote p{color:#dbe3ee;font-size:17px;font-family:var(--serif);font-style:italic;margin-bottom:24px;line-height:1.55}
+  .quote .who{display:flex;align-items:center;gap:13px}
+  .quote .who .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-2));
+    color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:var(--serif);font-size:18px}
+  .quote .who b{color:#fff;font-size:15px;display:block;font-family:var(--sans)}
+  .quote .who span{color:#9fb0c7;font-size:12.5px}
+
+  /* ---------- FAQ ---------- */
+  .faq-wrap{max-width:860px;margin:0 auto}
+  .faq{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden}
+  .faq summary{padding:24px 28px;font-weight:600;color:var(--navy);cursor:pointer;list-style:none;display:flex;
+    justify-content:space-between;align-items:center;font-size:18px;font-family:var(--serif)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--gold);font-size:26px;font-weight:300;transition:transform .2s;font-family:var(--sans)}
+  .faq[open] summary::after{transform:rotate(45deg)}
+  .faq[open] summary{color:var(--gold)}
+  .faq .ans{padding:0 28px 24px;color:var(--muted);font-size:15.5px}
+
+  /* ---------- CONTACT ---------- */
+  #contact{background:radial-gradient(900px 500px at 15% 0%,var(--navy-3),var(--navy) 60%,var(--navy-deep));color:#fff}
+  #contact .sec-head h2{color:#fff}
+  #contact .sec-head p{color:#aab8cc}
+  #contact .kicker{color:var(--gold-2)}
+  #contact .kicker::before,#contact .kicker::after{background:var(--gold-2)}
+  #contact{padding-top:50px;padding-bottom:56px}
+  #contact .sec-head{margin-bottom:40px}
+  .contact-info .ci a{transition:color .2s}
+  .contact-info .ci a:hover{color:var(--gold-2)}
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:start}
+  .contact-info .ci{display:flex;gap:18px;margin-bottom:30px;align-items:flex-start}
+  .contact-info .ci .ic{flex:0 0 50px;width:50px;height:50px;border-radius:12px;border:1px solid rgba(201,164,73,.35);
+    display:flex;align-items:center;justify-content:center}
+  .contact-info .ci .ic svg{width:22px;height:22px;stroke:var(--gold-2);fill:none;stroke-width:1.6}
+  .contact-info .ci b{display:block;color:#fff;font-size:16px;margin-bottom:3px;font-family:var(--sans);font-weight:600}
+  .contact-info .ci span{color:#aab8cc;font-size:14.5px}
+  .form-card{background:#fff;border-radius:20px;padding:40px;box-shadow:var(--shadow)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .form-card .fg{margin-bottom:20px}
+  .form-card label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px;
+    letter-spacing:.3px;font-family:var(--sans)}
+  .form-card input,.form-card select,.form-card textarea{width:100%;padding:13px 15px;border:1px solid var(--line);
+    border-radius:10px;font-size:15px;font-family:var(--sans);color:var(--ink);background:#fdfcf8}
+  .form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--gold);
+    box-shadow:0 0 0 3px rgba(201,164,73,.15)}
+  .form-card textarea{resize:vertical;min-height:100px}
+  .form-msg{display:none;background:var(--gold-soft);border:1px solid var(--gold);color:var(--navy);padding:15px;
+    border-radius:10px;margin-top:10px;font-size:14.5px;font-weight:600;text-align:center;font-family:var(--sans)}
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .wa-float{position:fixed;right:24px;bottom:24px;z-index:200;width:58px;height:58px;border-radius:50%;
+    background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .2s}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#050f1c;color:#9fb0c7;padding:72px 0 30px;font-size:14px}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px}
+  footer .brand-text b{color:#fff}
+  footer h4{color:#fff;font-family:var(--serif);font-size:19px;margin-bottom:18px;font-weight:600}
+  footer ul{list-style:none}
+  footer ul li{margin-bottom:11px}
+  footer ul a:hover,footer ul li:hover{color:var(--gold-2)}
+  .disclaimer{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;
+    padding:22px 24px;font-size:12.5px;line-height:1.75;color:#8b9bb3;margin-bottom:28px}
+  .disclaimer b{color:#c8d2e0}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.08);
+    padding-top:24px;flex-wrap:wrap;gap:10px;font-size:13px}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:980px){
+    nav ul{position:fixed;top:82px;right:0;width:280px;height:calc(100vh - 82px);background:var(--navy-2);
+      flex-direction:column;align-items:flex-start;padding:32px;gap:22px;transform:translateX(100%);
+      transition:transform .3s;border-left:1px solid rgba(201,164,73,.2)}
+    nav ul.open{transform:translateX(0)}
+    .menu-toggle{display:block}
+    .hero-grid,.about-grid,.calc-wrap,.contact-grid,.foot-grid,.founders,.about-intro{grid-template-columns:1fr}
+    .cards,.why-grid,.posts,.steps,.quotes{grid-template-columns:1fr}
+    .ai-stat{border-left:none;padding-left:0;margin-top:4px}
+    .founder{height:500px}
+    .founder .overlay{background:linear-gradient(to top,rgba(6,17,31,.97) 24%,rgba(6,17,31,.85) 58%,rgba(6,17,31,.4) 85%,rgba(6,17,31,.12))}
+    .founder .fbio{max-height:360px;opacity:1;margin-top:16px}
+    .founder>img{transform:none!important}
+    .founder .fplus{display:none}
+    .hero h1{font-size:46px}
+    .sec-head h2{font-size:36px}
+    .calc-output{order:-1}
+    .why-grid{grid-template-columns:1fr 1fr}
+    .hero-card{margin-left:0;margin-right:0}
+    .founder-card{padding:34px}
+  }
+  @media(max-width:560px){
+    .form-row,.mini-row{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr}
+    .trust-row{gap:20px}
+    .hero h1{font-size:38px}
+    .sec-head h2{font-size:30px}
+    .container{padding:0 20px}
+    section{padding:72px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <img class="logo" src="kts-logo.png" alt="K T Shah Investments logo">
+      <div class="brand-text"><b>K T Shah Investments</b><span>Invest · Grow · Prosper</span></div>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#calculators" onclick="closeMenu()">Calculators</a></li>
+        <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+        <li><a href="#contact" class="btn" onclick="closeMenu()">Start Investing</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home" style="padding-top:96px">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">AMFI-Registered Mutual Fund Distributor</span>
+      <h1>Build lasting wealth, <em>one goal at a time.</em></h1>
+      <p class="lead">K T Shah Investments helps families and professionals invest in mutual funds with clarity and confidence. Personalised, goal-based portfolios — backed by honest, jargon-free advice.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Reach Out to Us Today</a>
+        <a href="#calculators" class="btn btn-ghost">Try our Calculators</a>
+      </div>
+      <!-- PLACEHOLDER STATS: confirm / replace -->
+      <div class="trust-row">
+        <div><b>20+</b><span>Years of market experience</span></div>
+        <div><b>₹100Cr+</b><span>Assets advised</span></div>
+        <div><b>500+</b><span>Families served</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="founders-hero">
+        <figure><img src="father.jpeg" alt="Kirti Shah, Co-Founder"><figcaption>Kirti Shah<small>Co-Founder</small></figcaption></figure>
+        <figure><img src="son.jpeg" alt="Divyam Shah, Founder"><figcaption>Divyam Shah<small>Founder</small></figcaption></figure>
+      </div>
+      <div class="hero-card">
+        <h3>Quick SIP Estimate</h3>
+        <p class="sub">See what a monthly SIP could grow into.</p>
+        <div class="mini-row">
+          <div class="mini-field">
+            <label>Monthly (₹)</label>
+            <input type="number" id="hsipAmt" value="10000" min="500">
+          </div>
+          <div class="mini-field">
+            <label>Years</label>
+            <input type="number" id="hsipYears" value="15" min="1" max="40">
+          </div>
+        </div>
+        <div class="mini-result">
+          <span>Estimated corpus @ 12% p.a.</span>
+          <b id="hsipResult">₹50.5 L</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-intro">
+      <div class="ai-head">
+        <span class="kicker">Who we are</span>
+        <h2>A family legacy of <em>honest investing</em></h2>
+      </div>
+      <div class="ai-body">
+        <p>K T Shah Investments is a boutique mutual fund distribution practice built on a simple belief — that good advice should be clear, unbiased, and centred entirely on your goals. Two generations, one commitment: helping families invest with clarity and stay the course through every market cycle.</p>
+      </div>
+      <div class="ai-stat">
+        <div class="big"><span class="count" data-to="30">0</span><sup>+</sup></div>
+        <div class="lbl">Years of<br>Experience</div>
+      </div>
+    </div>
+    <div class="founders">
+      <article class="founder">
+        <img src="father.jpeg" alt="Kirti Shah — Founder">
+        <div class="fplus">+</div>
+        <div class="overlay">
+          <span class="fkick">Founder</span>
+          <h3>Kirti Shah</h3>
+          <div class="frole"><b>AMFI Registered</b> Mutual Fund Distributor</div>
+          <div class="fbio">
+            <div class="creds"><span>3+ Decades in Markets</span><span>Stock Broker</span><span>Systematic Investing</span></div>
+            <p>In the financial markets for more than three decades, Kirti is a seasoned stock broker who has spent his career helping families invest and grow their wealth through disciplined, systematic investing — the legacy and instinct only decades in the market can build.</p>
+          </div>
+        </div>
+      </article>
+      <article class="founder">
+        <img src="son.jpeg" alt="Divyam Shah — Co-Founder">
+        <div class="fplus">+</div>
+        <div class="overlay">
+          <span class="fkick">Co-Founder</span>
+          <h3>Divyam Shah</h3>
+          <div class="frole"><b>AMFI Registered</b> Mutual Fund Distributor · ARN 296940</div>
+          <div class="fbio">
+            <div class="creds"><span>CA Finalist</span><span>CFA Level II Candidate</span><span>NISM V-A, XIII &amp; XV</span></div>
+            <p>Divyam brings a blend of modern financial education and continuous learning, complemented by his father's practical market experience, to apply and refine evolving investment strategies.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker center-k">What we offer</span>
+      <h2>Solutions for every <em>financial goal</em></h2>
+      <p>A complete suite of mutual fund and financial planning services, tailored to where you are today and where you want to be.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="bgnum">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16l5-5 4 4 8-8"/><path d="M21 7v5h-5"/><path d="M3 20.5h18"/></svg></div>
+        <h3>SIP &amp; Mutual Funds</h3>
+        <p>Start systematic investment plans across equity, debt, and hybrid funds — handpicked to match your risk profile and goals.</p>
+      </div>
+      <div class="card">
+        <span class="bgnum">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></div>
+        <h3>Goal-Based Planning</h3>
+        <p>Retirement, education, a home, or wealth creation — we build a clear roadmap and the right portfolio to get you there.</p>
+      </div>
+      <div class="card">
+        <span class="bgnum">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 18.5h18"/><path d="M7 18.5a5 5 0 0110 0"/><path d="M12 7.5V4"/><path d="M5.4 9.4 3.9 7.9"/><path d="M18.6 9.4l1.5-1.5"/><path d="M2 13.5h2.2"/><path d="M19.8 13.5H22"/></svg></div>
+        <h3>Retirement Planning</h3>
+        <p>Build a corpus that funds the lifestyle you want after work. We plan, invest, and review so your golden years stay comfortable and worry-free.</p>
+      </div>
+      <div class="card">
+        <span class="bgnum">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 4 2 8.5l10 4.5 10-4.5L12 4z"/><path d="M6 10.5V15c0 1.3 2.7 2.6 6 2.6s6-1.3 6-2.6v-4.5"/><path d="M22 8.5V14"/></svg></div>
+        <h3>Child Education Planning</h3>
+        <p>Give your child's dreams a financial head start. We map the future cost of education and build a disciplined plan to fund every milestone.</p>
+      </div>
+      <div class="card">
+        <span class="bgnum">05</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></svg></div>
+        <h3>Lumpsum Investing</h3>
+        <p>Got a bonus or windfall? We help you deploy lumpsum amounts intelligently across funds and time.</p>
+      </div>
+      <div class="card">
+        <span class="bgnum">06</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><circle cx="17.6" cy="9.5" r="2.2"/><path d="M16.5 14.2c2.5.1 4.5 1.8 4.5 4.4"/></svg></div>
+        <h3>Family Wealth</h3>
+        <p>Consolidated planning for your entire family — so every member's goals are coordinated under one strategy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker center-k">Why mutual funds</span>
+      <h2>The smarter way to <span class="risk" id="riskWord"></span><span class="caret" id="caret"></span></h2>
+      <p>Mutual funds offer professional management, diversification, and the power of compounding — accessible from as little as ₹500 a month.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="wic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6.5" rx="7" ry="2.5"/><path d="M5 6.5v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5"/><path d="M5 11.5v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5"/></svg></div>
+        <div class="num">₹500</div>
+        <div class="wlabel">Start small</div>
+        <p>Begin a SIP with as little as ₹500 a month.</p>
+      </div>
+      <div class="why-item">
+        <div class="wic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 8.6-4-1-7-4.1-7-8.6V6l7-3z"/><path d="M9 11.5l2 2 4-4"/></svg></div>
+        <div class="num">100%</div>
+        <div class="wlabel">Expert-managed</div>
+        <p>Your money is handled by professional fund managers.</p>
+      </div>
+      <div class="why-item">
+        <div class="wic"><svg viewBox="0 0 24 24"><path d="M12 20.5V12"/><path d="M12 12c0-3.2 2.3-5.3 5.3-5.3C17.3 9.9 15.2 12 12 12z"/><path d="M12 14c0-2.7-1.9-4.7-4.7-4.7C7.3 12 9.2 14 12 14z"/></svg></div>
+        <div class="num">∞</div>
+        <div class="wlabel">Compounding</div>
+        <p>The longer you stay invested, the more your money grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker center-k">How it works</span>
+      <h2>Getting started is <em>simple</em></h2>
+      <p>From first conversation to a fully managed portfolio in four easy steps.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Discover</h3><p>A free first conversation to understand your goals, income, and risk comfort.</p></div>
+      <div class="step"><span class="n">02</span><h3>Plan</h3><p>We design a goal-based portfolio mapped to your timelines and needs.</p></div>
+      <div class="step"><span class="n">03</span><h3>Invest</h3><p>Paperless KYC and onboarding — start your SIP or lumpsum in minutes.</p></div>
+      <div class="step"><span class="n">04</span><h3>Grow</h3><p>Regular reviews and rebalancing keep your plan on track over time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATORS -->
+<section id="calculators">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker center-k">Plan with confidence</span>
+      <h2>Investment <em>Calculators</em></h2>
+      <p>Estimate the future value of your investments. Move the sliders to see how time and consistency build wealth.</p>
+    </div>
+
+    <div class="calc-tabs">
+      <div class="calc-tab active" data-calc="sip" onclick="switchCalc('sip')">SIP Calculator</div>
+      <div class="calc-tab" data-calc="lumpsum" onclick="switchCalc('lumpsum')">Lumpsum Calculator</div>
+      <div class="calc-tab" data-calc="goal" onclick="switchCalc('goal')">Goal Planner</div>
+    </div>
+
+    <!-- SIP -->
+    <div class="calc-panel active" id="panel-sip">
+      <div class="calc-wrap">
+        <div class="calc-inputs">
+          <div class="field">
+            <label>Monthly investment <span class="val">₹<span id="sip-amt-v">10,000</span></span></label>
+            <input type="range" id="sip-amt" min="500" max="200000" step="500" value="10000" oninput="calcSIP()">
+          </div>
+          <div class="field">
+            <label>Expected return (p.a.) <span class="val"><span id="sip-rate-v">12</span>%</span></label>
+            <input type="range" id="sip-rate" min="6" max="20" step="0.5" value="12" oninput="calcSIP()">
+          </div>
+          <div class="field">
+            <label>Time period <span class="val"><span id="sip-yrs-v">15</span> yrs</span></label>
+            <input type="range" id="sip-yrs" min="1" max="40" step="1" value="15" oninput="calcSIP()">
+          </div>
+        </div>
+        <div class="calc-output">
+          <div class="res-label">Estimated future value</div>
+          <div class="res-big" id="sip-total">₹50.5 L</div>
+          <div class="res-line">Invested amount <b id="sip-invested">₹18.0 L</b></div>
+          <div class="res-line">Est. returns <b id="sip-gain">₹32.5 L</b></div>
+          <div class="calc-note">Assumes monthly compounding at the chosen rate. For illustration only.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LUMPSUM -->
+    <div class="calc-panel" id="panel-lumpsum">
+      <div class="calc-wrap">
+        <div class="calc-inputs">
+          <div class="field">
+            <label>Investment amount <span class="val">₹<span id="lump-amt-v">5,00,000</span></span></label>
+            <input type="range" id="lump-amt" min="10000" max="10000000" step="10000" value="500000" oninput="calcLump()">
+          </div>
+          <div class="field">
+            <label>Expected return (p.a.) <span class="val"><span id="lump-rate-v">12</span>%</span></label>
+            <input type="range" id="lump-rate" min="6" max="20" step="0.5" value="12" oninput="calcLump()">
+          </div>
+          <div class="field">
+            <label>Time period <span class="val"><span id="lump-yrs-v">10</span> yrs</span></label>
+            <input type="range" id="lump-yrs" min="1" max="40" step="1" value="10" oninput="calcLump()">
+          </div>
+        </div>
+        <div class="calc-output">
+          <div class="res-label">Estimated future value</div>
+          <div class="res-big" id="lump-total">₹15.5 L</div>
+          <div class="res-line">Invested amount <b id="lump-invested">₹5.0 L</b></div>
+          <div class="res-line">Est. returns <b id="lump-gain">₹10.5 L</b></div>
+          <div class="calc-note">Assumes annual compounding at the chosen rate. For illustration only.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOAL -->
+    <div class="calc-panel" id="panel-goal">
+      <div class="calc-wrap">
+        <div class="calc-inputs">
+          <div class="field">
+            <label>Target amount <span class="val">₹<span id="goal-amt-v">1,00,00,000</span></span></label>
+            <input type="range" id="goal-amt" min="100000" max="50000000" step="100000" value="10000000" oninput="calcGoal()">
+          </div>
+          <div class="field">
+            <label>Expected return (p.a.) <span class="val"><span id="goal-rate-v">12</span>%</span></label>
+            <input type="range" id="goal-rate" min="6" max="20" step="0.5" value="12" oninput="calcGoal()">
+          </div>
+          <div class="field">
+            <label>Time to goal <span class="val"><span id="goal-yrs-v">20</span> yrs</span></label>
+            <input type="range" id="goal-yrs" min="1" max="40" step="1" value="20" oninput="calcGoal()">
+          </div>
+        </div>
+        <div class="calc-output">
+          <div class="res-label">Monthly SIP required</div>
+          <div class="res-big" id="goal-sip">₹10,109</div>
+          <div class="res-line">Target corpus <b id="goal-target">₹1.0 Cr</b></div>
+          <div class="res-line">Total invested <b id="goal-invest">₹24.3 L</b></div>
+          <div class="calc-note">Estimated SIP to reach your goal at the chosen rate. For illustration only.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker center-k">Questions answered</span>
+      <h2>Frequently asked <em>questions</em></h2>
+      <p>Everything you need to know before you begin investing with us.</p>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq"><summary>How much money do I need to start investing?</summary><div class="ans">You can start a Systematic Investment Plan (SIP) with as little as ₹500 per month. There's no need for a large amount — consistency over time matters far more than the size of each instalment.</div></details>
+      <details class="faq"><summary>Do you charge me a fee for your advice?</summary><div class="ans">As an AMFI-registered mutual fund distributor, we are compensated through commissions paid by the asset management companies (AMCs), as disclosed by regulation. You do not pay us a separate advisory fee for distribution services.</div></details>
+      <details class="faq"><summary>Is my money safe with mutual funds?</summary><div class="ans">Mutual funds are regulated by SEBI and your investments are held by independent custodians — never by the distributor. However, returns are market-linked and not guaranteed. We help you choose funds that match your risk profile, but mutual fund investments are subject to market risks.</div></details>
+      <details class="faq"><summary>How do I track my investments?</summary><div class="ans">You'll receive consolidated statements and can access your portfolio digitally any time. We also schedule regular reviews to keep you informed and your plan on track.</div></details>
+      <details class="faq"><summary>Can I withdraw my money whenever I want?</summary><div class="ans">Open-ended mutual funds offer high liquidity — you can redeem units on any business day. Some funds (like ELSS tax-savers) have a lock-in period, which we'll always explain clearly before you invest.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker center-k">Get in touch</span>
+      <h2>Start your investment journey <em>today</em></h2>
+      <p>Reach out to us today! We'll understand your goals and show you a clear path forward.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></div>
+          <div><b>Call us</b><span><a href="tel:+919820111383">+91 98201 11383</a> / <a href="tel:+919969929280">+91 99699 29280</a></span></div>
+        </div>
+        <div class="ci">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div><b>Email</b><span><a href="mailto:ktshahinvestments@gmail.com">ktshahinvestments@gmail.com</a> / <a href="mailto:ktsmfs@gmail.com">ktsmfs@gmail.com</a></span></div>
+        </div>
+        <div class="ci">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b>Office</b><span><a href="https://www.google.com/maps/dir//KT+Shah+Investments,+87%2F89,+Kika+St,+Marine+Lines+East,+GULALWADI,+Gulal+Wadi,+Bhuleshwar,+Mumbai,+Maharashtra+400004/@18.9777521,72.8137728,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7cf61826591bb:0xa6811e307bb67b03!2m2!1d72.8294844!2d18.9555712" target="_blank" rel="noopener">87/89, Kika St, Marine Lines East, Gulal Wadi, Bhuleshwar, Mumbai, Maharashtra 400004</a></span></div>
+        </div>
+      </div>
+
+      <form class="form-card" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="fg"><label>Full name</label><input id="f-name" type="text" required placeholder="Your name"></div>
+          <div class="fg"><label>Phone</label><input id="f-phone" type="tel" required placeholder="+91 ..."></div>
+        </div>
+        <div class="fg"><label>Email</label><input id="f-email" type="email" required placeholder="you@example.com"></div>
+        <div class="fg">
+          <label>I'm interested in</label>
+          <select id="f-interest">
+            <option>Starting a SIP</option>
+            <option>Goal-based planning</option>
+            <option>Retirement Planning</option>
+            <option>Child's Education Planning</option>
+            <option>Lumpsum investment</option>
+            <option>General enquiry</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message (optional)</label><textarea id="f-message" placeholder="Tell us a little about your goals..."></textarea></div>
+        <button type="submit" class="btn" style="width:100%">Reach Out to Us Today</button>
+        <div class="form-msg" id="formMsg">✓ Thank you! We've received your details and will reach out within one business day.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:16px">
+          <img class="logo" src="kts-logo.png" alt="K T Shah Investments logo">
+          <div class="brand-text"><b>K T Shah Investments</b><span>Invest · Grow · Prosper</span></div>
+        </div>
+        <p style="max-width:360px;color:#9fb0c7">Your trusted partner for goal-based mutual fund investing. Honest advice, personalised portfolios, and a commitment to your long-term financial well-being.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#calculators">Calculators</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+919820111383">+91 98201 11383</a></li>
+          <li><a href="tel:+919969929280">+91 99699 29280</a></li>
+          <li><a href="mailto:ktshahinvestments@gmail.com">ktshahinvestments@gmail.com</a></li>
+          <li><a href="mailto:ktsmfs@gmail.com">ktsmfs@gmail.com</a></li>
+          <li><a href="https://www.google.com/maps/dir//KT+Shah+Investments,+87%2F89,+Kika+St,+Marine+Lines+East,+GULALWADI,+Gulal+Wadi,+Bhuleshwar,+Mumbai,+Maharashtra+400004/@18.9777521,72.8137728,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7cf61826591bb:0xa6811e307bb67b03!2m2!1d72.8294844!2d18.9555712" target="_blank" rel="noopener">87/89, Kika St, Gulal Wadi, Bhuleshwar, Mumbai 400004</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <b>Mutual Fund investments are subject to market risks. Read all scheme related documents carefully.</b><br>
+      K T Shah Investments is an AMFI-registered Mutual Fund Distributor. <b>ARN: 296940</b> &nbsp;|&nbsp; Distributor: Divyam Shah. The information on this website is for general and educational purposes only and does not constitute investment advice, a recommendation, or an offer to buy or sell any mutual fund units. Calculator results are illustrative estimates based on assumed rates of return and do not guarantee future performance. Past performance is not indicative of future results. Please consult your financial advisor and read the Scheme Information Document (SID) and Key Information Memorandum (KIM) before investing.
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> K T Shah Investments. All rights reserved.</span>
+      <span>ARN: 296940 · AMFI-Registered Mutual Fund Distributor</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/919820111383?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20investing%20with%20K%20T%20Shah%20Investments." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.4-5.2-4.6-5.3-4.8-.2-.2-1.3-1.8-1.3-3.4s.8-2.4 1.1-2.7c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2 1.2 2.3 1.3.2 0 .4 0 .6-.2l.7-.8c.2-.3.5-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+</a>
+
+<script>
+  // ---- nav ----
+  function toggleMenu(){document.getElementById('menu').classList.toggle('open');}
+  function closeMenu(){document.getElementById('menu').classList.remove('open');}
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---- formatting helpers ----
+  function fmtINR(n){ // short form: L / Cr
+    n = Math.round(n);
+    if(n >= 10000000) return '₹' + (n/10000000).toFixed(2).replace(/\.00$/,'') + ' Cr';
+    if(n >= 100000)   return '₹' + (n/100000).toFixed(2).replace(/\.00$/,'') + ' L';
+    return '₹' + n.toLocaleString('en-IN');
+  }
+  function grp(n){return Number(Math.round(n)).toLocaleString('en-IN');} // grouped full number
+
+  // ---- SIP ----
+  function calcSIP(){
+    const P = +document.getElementById('sip-amt').value;
+    const r = +document.getElementById('sip-rate').value;
+    const y = +document.getElementById('sip-yrs').value;
+    document.getElementById('sip-amt-v').textContent = grp(P);
+    document.getElementById('sip-rate-v').textContent = r;
+    document.getElementById('sip-yrs-v').textContent = y;
+    const i = r/100/12, n = y*12;
+    const fv = P * ((Math.pow(1+i,n)-1)/i) * (1+i);
+    const invested = P*n;
+    document.getElementById('sip-total').textContent = fmtINR(fv);
+    document.getElementById('sip-invested').textContent = fmtINR(invested);
+    document.getElementById('sip-gain').textContent = fmtINR(fv-invested);
+  }
+  // ---- Lumpsum ----
+  function calcLump(){
+    const P = +document.getElementById('lump-amt').value;
+    const r = +document.getElementById('lump-rate').value;
+    const y = +document.getElementById('lump-yrs').value;
+    document.getElementById('lump-amt-v').textContent = grp(P);
+    document.getElementById('lump-rate-v').textContent = r;
+    document.getElementById('lump-yrs-v').textContent = y;
+    const fv = P * Math.pow(1+r/100, y);
+    document.getElementById('lump-total').textContent = fmtINR(fv);
+    document.getElementById('lump-invested').textContent = fmtINR(P);
+    document.getElementById('lump-gain').textContent = fmtINR(fv-P);
+  }
+  // ---- Goal ----
+  function calcGoal(){
+    const FV = +document.getElementById('goal-amt').value;
+    const r = +document.getElementById('goal-rate').value;
+    const y = +document.getElementById('goal-yrs').value;
+    document.getElementById('goal-amt-v').textContent = grp(FV);
+    document.getElementById('goal-rate-v').textContent = r;
+    document.getElementById('goal-yrs-v').textContent = y;
+    const i = r/100/12, n = y*12;
+    const sip = FV * i / ((Math.pow(1+i,n)-1) * (1+i));
+    document.getElementById('goal-sip').textContent = '₹' + grp(sip);
+    document.getElementById('goal-target').textContent = fmtINR(FV);
+    document.getElementById('goal-invest').textContent = fmtINR(sip*n);
+  }
+  // ---- hero mini ----
+  function calcHero(){
+    const P = +document.getElementById('hsipAmt').value || 0;
+    const y = +document.getElementById('hsipYears').value || 0;
+    const i = 0.12/12, n = y*12;
+    const fv = n>0 ? P*((Math.pow(1+i,n)-1)/i)*(1+i) : 0;
+    document.getElementById('hsipResult').textContent = fmtINR(fv);
+  }
+  document.getElementById('hsipAmt').addEventListener('input', calcHero);
+  document.getElementById('hsipYears').addEventListener('input', calcHero);
+
+  // ---- tabs ----
+  function switchCalc(which){
+    document.querySelectorAll('.calc-tab').forEach(t=>t.classList.toggle('active', t.dataset.calc===which));
+    document.querySelectorAll('.calc-panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+which).classList.add('active');
+  }
+  // ---- form -> Google Sheets ----
+  // Paste your Google Apps Script Web App URL between the quotes below:
+  const SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbyesk-RwNVHTvayw-dh0yk_xDYsTktxsYSoPoOCd1PJqOoEoZfrXGyw27-_2xeBfe4a_g/exec";
+
+  function submitForm(e){
+    e.preventDefault();
+    const f = e.target;
+    const msg = document.getElementById('formMsg');
+    const btn = f.querySelector('button[type=submit]');
+    const data = new URLSearchParams({
+      name:     document.getElementById('f-name').value.trim(),
+      phone:    document.getElementById('f-phone').value.trim(),
+      email:    document.getElementById('f-email').value.trim(),
+      interest: document.getElementById('f-interest').value,
+      message:  document.getElementById('f-message').value.trim()
+    });
+    const done = ()=>{ msg.style.display='block'; f.reset(); btn.disabled=false; btn.textContent='Reach Out to Us Today'; };
+
+    // If endpoint not set yet, just confirm locally so the form still "works".
+    if(!SHEET_ENDPOINT || SHEET_ENDPOINT.indexOf('PASTE_YOUR') === 0){ done(); return; }
+
+    btn.disabled = true; btn.textContent = 'Sending…';
+    fetch(SHEET_ENDPOINT, { method:'POST', body:data })   // simple request: no CORS preflight
+      .then(done).catch(done);
+  }
+
+  // ---- rolling count-up for the 30+ stat ----
+  function runCount(el){
+    const to = +el.dataset.to, dur = 1400, t0 = performance.now();
+    function step(t){
+      const p = Math.min((t - t0)/dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3); // ease-out
+      el.textContent = Math.round(eased * to);
+      if(p < 1) requestAnimationFrame(step);
+      else el.textContent = to;
+    }
+    requestAnimationFrame(step);
+  }
+  document.querySelectorAll('.count').forEach(el=>{
+    const io = new IntersectionObserver((entries,obs)=>{
+      entries.forEach(en=>{ if(en.isIntersecting){ runCount(el); obs.unobserve(el); } });
+    }, {threshold:.6});
+    io.observe(el);
+  });
+
+  // ---- headline: type "Risk your money" -> strike red -> backspace -> type "Grow your money" (stays) ----
+  (function(){
+    const el = document.getElementById('riskWord');
+    const caret = document.getElementById('caret');
+    if(!el) return;
+    let started = false;
+    function typeInto(text, speed, done){
+      let i = 0;
+      (function step(){
+        el.textContent = text.slice(0, i);
+        if(i < text.length){ i++; setTimeout(step, speed); }
+        else if(done) done();
+      })();
+    }
+    function deleteAll(speed, done){
+      (function step(){
+        const t = el.textContent;
+        if(t.length > 0){ el.textContent = t.slice(0, -1); setTimeout(step, speed); }
+        else if(done) done();
+      })();
+    }
+    function run(){
+      typeInto('Risk your money', 85, function(){
+        setTimeout(function(){                 // hold 1s
+          el.classList.add('struck');          // draw red strike-through
+          setTimeout(function(){               // let the strike land
+            deleteAll(38, function(){          // backspace it away
+              el.classList.remove('struck','risk');
+              el.classList.add('grow');        // switch to gold
+              typeInto('Grow your money', 85, function(){
+                if(caret) caret.style.display = 'none';   // stays permanently
+              });
+            });
+          }, 750);
+        }, 1000);
+      });
+    }
+    const target = el.closest('h2') || el;
+    function maybeStart(){
+      if(started) return;
+      const r = target.getBoundingClientRect();
+      if(r.top < (window.innerHeight || 800) * 0.9 && r.bottom > 0){
+        started = true; run();
+        window.removeEventListener('scroll', maybeStart);
+      }
+    }
+    window.addEventListener('scroll', maybeStart, {passive:true});
+    window.addEventListener('load', maybeStart);
+    maybeStart();
+  })();
+
+  // init
+  calcSIP(); calcLump(); calcGoal(); calcHero();
+</script>
+</body>
+</html>
